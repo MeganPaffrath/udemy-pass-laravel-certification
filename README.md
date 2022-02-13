@@ -11,3 +11,9 @@
   - [Configuration](https://laravel.com/docs/8.x/configuration)
 - The Basics
   - [Routing](https://laravel.com/docs/9.x/routing)
+    - Basic Routing
+      - Available Router Methods
+    - Route Parameters
+      - Required Parameters
+      - Optional Parameters
+      - Regular Expression Constraints

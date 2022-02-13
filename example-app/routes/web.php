@@ -16,3 +16,27 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/hello', function () {
+    return "WAT UP";
+});
+
+Route::get('/name/{name}', function($name) {
+    return 'Hello there ' . $name . '.';
+});
+
+
+// with optionals
+Route::get('/animal/{animal?}', function($animal = null) {
+    if (!is_null($animal)) {
+        return 'Animal entered: ' . $animal . '.';
+    }
+    return 'No animal entered';
+});
+
+Route::get('/user/{id?}', function($id = null) {
+    if (!is_null($id)) {
+        return 'user id: ' . $id;
+    }
+    return 'no user found.';
+});
